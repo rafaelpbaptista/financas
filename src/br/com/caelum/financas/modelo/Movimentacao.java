@@ -10,9 +10,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+@NamedQuery(name = "Movimentacao.buscaTodasMovimentacoesDaConta", query = "select m from Movimentacao m where m.conta=:pConta")
 @Entity
 public class Movimentacao {
 
