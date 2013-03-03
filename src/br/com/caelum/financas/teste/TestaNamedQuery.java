@@ -30,5 +30,4 @@ public class TestaNamedQuery {
 			System.out.println("Valor ......: R$ " + m.getValor());
 		}
 	}
-
 }
